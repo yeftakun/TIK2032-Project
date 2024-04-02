@@ -4,23 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Personal Page</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/gallery.html">Gallery</a></li>
-                <li><a href="pages/blog.html">Blog</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Yefta Yosia Asyel</h2>
+    <div class="fixed-header">
+        <div class="header">
+            <div class="header-logo">
+                <img src="./img/4x62.jpg" alt="logo">
+            </div>
+            <div class="header-title">
+                <a href="index.html">YEFTA YOSIA ASYEL</a>
+                <p class="header-title-sub">Mahasiswa Teknik Informatika</p>
+            </div>
+        </div>
+    
+        <ul class="nav">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="./pages/gallery.html">Gallery</a></li>
+            <li class="nav-item"><a href="./pages/blog.html">Blog</a></li>
+            <li class="nav-item"><a href="./pages/contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="konten">
+        <h1>Beranda</h1>
 
-        <img src="./img/4x62.jpg" alt="Foto Profil" style="width: 200px; height: 300px;">
+        <h2>Selamat Datang di Personal Web Saya</h2>
+
+        <h2>Portofolio:</h2>
+        <ul class="project-list">
+            <!-- <li><a href="https://github.com/yeftakun/Hiki-Adventure">Project Mata Kuliah Pengembangan Game</a></li>
+            <li><a href="https://github.com/yeftakun/bookshelf-api-project-dicoding">Project Dicoding - Bookshelf Api</a></li> -->
+            <li class="project-item"><a href="https://github.com/yeftakun/Hiki-Adventure">
+                <img src="./img/project1.png" alt="project 1">
+                <p class="project-item-title">Hiki Adventure</p>
+                <p class="project-item-desc">Project Akhir Mata Kuliah Pengembangan Game</p>
+            </a></li>
+            <li class="project-item"><a href="https://github.com/yeftakun/bookshelf-api-project-dicoding">
+                <img src="./img/project2.png" alt="project 2">
+                <p class="project-item-title">Bookshelf API</p>
+                <p class="project-item-desc">Project Dicoding Submission kelas "Belajar Membuat Aplikasi Back-End untuk Pemula"</p>
+            </a></li>
+        </ul>
+
+    </div>
+        <h2>Yefta Yosia Asyel</h2>
         <h3>Yefta Yosia Asyel</h3>
         <p>Mahasiswa S-1 di program studi Teknik Informatika, Universitas Sam Ratulangi.</p>
 
@@ -30,7 +57,7 @@
             <li>Universitas Sam Ratulangi, Teknik Informatika, S.Kom, Manado, Sedang Menempuh</li>
         </ul>
 
-        <h3>Portofolio:</h3>
+        <h2>Portofolio:</h2>
         <ul>
             <li><a href="https://github.com/yeftakun/Hiki-Adventure">Project Mata Kuliah Pengembangan Game</a></li>
             <li><a href="https://github.com/yeftakun/bookshelf-api-project-dicoding">Project Dicoding - Bookshelf Api</a></li>
