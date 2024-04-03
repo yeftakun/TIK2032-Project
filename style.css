@@ -17,7 +17,7 @@
 
 .header-logo img{
     height: 120px;
-    border-radius: 5px;
+    border-radius: 100%;
     margin-top: -20px;
     margin-bottom: -20px;
 }
@@ -98,6 +98,11 @@
     color: #000;
 }
 
+.project-item img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
 .project-item img {
     width: 400px;
     height: 200px;
@@ -116,6 +121,53 @@
 }
 
 .project-item-desc {
+    font-size: 14px;
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* pendidikan */
+.pendidikan-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pendidikan-item {
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+.pendidikan-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.pendidikan-item img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.pendidikan-item-title {
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pendidikan-keterangan{
+    max-width: 250px;
+    min-width: 180px;
+}
+
+.pendidikan-item-desc {
     font-size: 14px;
     max-width: 400px;
     overflow: hidden;
@@ -200,4 +252,14 @@ td>img{
 
 .btn:active{
     background-color: pink;
+}
+
+/* footer */
+
+footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
 }

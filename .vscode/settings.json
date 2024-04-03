@@ -6,5 +6,8 @@
     "liveServer.settings.wait": 10,
     "liveServer.settings.CustomBrowser": "chrome",
     "editor.wordWrap": "on",
-    "commentTranslate.targetLanguage": "id"
+    "commentTranslate.targetLanguage": "id",
+    "background.style": {
+        "opacity": 0.1
+    }
 }
