@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     var spanText = document.querySelector('.multiple-text');
-    var textArray = ['Backend Developer'];
+    var textArray = ['Backend Enthusiast', 'Tech Enthusiasts'];
     var currentTextIndex = 0;
 
     function type() {
