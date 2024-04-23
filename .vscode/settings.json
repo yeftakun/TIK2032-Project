@@ -1,13 +1,6 @@
 {
-    "window.zoomLevel": 0,
-    "editor.fontSize": 14,
     "files.autoSave": "afterDelay",
-    "liveServer.settings.fullReload": true,
-    "liveServer.settings.wait": 10,
-    "liveServer.settings.CustomBrowser": "chrome",
-    "editor.wordWrap": "on",
-    "commentTranslate.targetLanguage": "id",
-    "background.style": {
-        "opacity": 0.1
-    }
+    "background.enabled": false,
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on"
 }

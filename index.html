@@ -1,78 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Personal Webpage Yefta</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./assets/logo/miaw.ico">
 </head>
+
 <body>
-    <div class="fixed-header">
-        <div class="header">
-            <div class="header-logo">
-                <img src="./img/foto1.jpg" alt="logo">
-            </div>
-            <div class="header-title">
-                <a href="index.html">YEFTA YOSIA ASYEL</a>
-                <p class="header-title-sub">Mahasiswa Teknik Informatika</p>
-            </div>
-        </div>
     
-        <ul class="nav">
-            <li class="nav-item"><a href="index.html">Home</a></li>
-            <li class="nav-item"><a href="./pages/gallery.html">Gallery</a></li>
-            <li class="nav-item"><a href="./pages/blog.html">Blog</a></li>
-            <li class="nav-item"><a href="./pages/contact.html">Contact</a></li>
-        </ul>
-    </div>
-    <div class="konten">
-        <h1>Beranda</h1>
+    <header class="header">
+        <a href="#" class="logo">Portofolio.</a>
 
-        <div class="konten-utama">
-            <!-- ini berisi penejalasan tentang sata -->
+        <nav class="navbar">
+            <a href="#" style="--i:1" class="active">Home</a>
+            <a href="./page/gallery.html" style="--i:2">Gallery</a>
+            <a href="./page/blog.html" style="--i:3">Blog</a>
+            <div class="dropdown" id="contactDropdown">
+                <a href="#" class="contact" style="--i:4">Contact</a>
+                <div class="dropdown-content">
+                    <a href="./page/contact-list/contact-email.html">E-mail</a>
+                    <a href="./page/contact-list/contact-wa.html">WhatsApp</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Yefta Asyel</h1>
+            <h3>And I'm a <span class="multiple-text" id="mytext"><!--Informatics Engineering Undergraduate--></span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fuga eaque aperiam, modi, tenetur et ex veritatis dolores unde molestias fugit nisi aliquid consectetur dignissimos? Doloribus repellat debitis repellendus magni.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=100033274762510" style="--i:7;"><img src="./assets/logo/facebook-logo-24.png" alt="facebook-logo"></a>
+                <a href="https://www.instagram.com/yeftaasyel_/" style="--i:8;"><img src="./assets/logo/instagram-alt-logo-24.png" alt="instagram-logo"></a>
+                <a href="https://www.linkedin.com/in/yefta-yosia-asyel" style="--i:9;"><img src="./assets/logo/linkedin-logo-24.png" alt="linkedin-logo"></a>
+                <a href="https://youtube.com/@yeftakun" style="--i:10;"><img src="./assets/logo/youtube-logo-24.png" alt="youtube-logo"></a>
+            </div>
+            <a href="./assets/files/Yefta's CV.jpg" download="Yefta's_CV.jpg" class="btn">Download CV</a>
         </div>
 
-        <h2>Selamat Datang di Personal Web Saya</h2>
-        <br>
-        <!-- Portofolio -->
-        <h2>Portofolio:</h2>
-        <ul class="project-list">
-            <!-- <li><a href="https://github.com/yeftakun/Hiki-Adventure">Project Mata Kuliah Pengembangan Game</a></li>
-            <li><a href="https://github.com/yeftakun/bookshelf-api-project-dicoding">Project Dicoding - Bookshelf Api</a></li> -->
-            <li class="project-item"><a href="https://github.com/yeftakun/Hiki-Adventure">
-                <img src="./img/project1.png" alt="project 1">
-                <p class="project-item-title">Hiki Adventure</p>
-                <p class="project-item-desc">Project Akhir Mata Kuliah Pengembangan Game</p>
-            </a></li>
-            <li class="project-item"><a href="https://github.com/yeftakun/bookshelf-api-project-dicoding">
-                <img src="./img/project2.png" alt="project 2">
-                <p class="project-item-title">Bookshelf API</p>
-                <p class="project-item-desc">Project Dicoding Submission kelas "Belajar Membuat Aplikasi Back-End untuk Pemula"</p>
-            </a></li>
-        </ul>
-        <br>
-        <h2>Pendidikan</h2>
-        <ul class="pendidikan-list">
-            <li class="pendidikan-item">
-                <img src="./img/logo-pendidikan-default.png" alt="SMKN 2 Dumoga">
-                <div class="pendidikan-keterangan">
-                    <p class="pendidikan-item-title">SMKN 2 Dumoga</p>
-                    <p class="pendidikan-item-desc">Multimedia | 2022</p>
-                </div>
-            </li>
-            <li class="pendidikan-item">
-                <img src="./img/logo-pendidikan-unsrat.png" alt="Unsrat">
-                <div class="pendidikan-keterangan">
-                    <p class="pendidikan-item-title">Universitas Sam Ratulangi</p>
-                    <p class="pendidikan-item-desc">Teknik Informatika | Sedang menempuh</p>
-                </div>
-            </li>                
-        </ul>
+        <div class="home-img">
+            <img src="./assets/img/home-img.png" alt="home-img">
+        </div>
+    </section>
 
-    </div> <!-- batas konten -->
-    
-    <footer>
-        <p>Personal Page - Yefta Asyel</p>
-    </footer>
+    <script src="./script/anim-type.js"></script>
+    <script src="./script/script.js"></script>
 </body>
+
+
 </html>
